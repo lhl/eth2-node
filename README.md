@@ -21,3 +21,9 @@ Reference:
   * https://hub.docker.com/r/ethereum/client-go/tags?page=1&ordering=last_updated
 * https://www.freecodecamp.org/news/how-to-run-geth-from-a-docker-container-b6d30620ca74/
 * https://github.com/islishude/geth-docker/ 
+
+## prysm
+
+Looks like there's a whole setup here already...
+* https://github.com/stereum-dev/ethereum2-docker-compose
+* https://github.com/stereum-dev/ethereum2-docker-compose/tree/master/compose-examples/prysm-only
