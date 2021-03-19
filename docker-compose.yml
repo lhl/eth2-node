@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+  geth:
+    image: ethereum/client-go:stable
+    restart: unless-stopped
+    ports:
+      - "30303:30303"
+      - "30303:30303/udp"
+    volumes:
+      - ./chaindata:/chaindata
+    stop_signal: SIGINT
+    stop_grace_period: 2m
+    command:
+      - --nousb
+      - --datadir
+      - "/chaindata"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "2m"
+        max-file: "10"
